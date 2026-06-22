@@ -211,7 +211,7 @@ img {
     right: 0;
 }
 
-.mobile-menu a {
+.mobile-menu a:not(.btn) {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-navy);
@@ -221,7 +221,7 @@ img {
     transition: color 0.3s ease;
 }
 
-.mobile-menu a::after {
+.mobile-menu a:not(.btn)::after {
     content: '';
     position: absolute;
     bottom: 5px;
@@ -232,18 +232,21 @@ img {
     transition: width 0.3s ease;
 }
 
-.mobile-menu a:hover,
-.mobile-menu a.active {
+.mobile-menu a:not(.btn):hover,
+.mobile-menu a.active:not(.btn) {
     color: var(--accent-blue);
 }
 
-.mobile-menu a:hover::after,
-.mobile-menu a.active::after {
+.mobile-menu a:not(.btn):hover::after,
+.mobile-menu a.active:not(.btn)::after {
     width: 100%;
 }
 
 .mobile-menu .btn {
     margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
 }
 
 /* Overlay */
