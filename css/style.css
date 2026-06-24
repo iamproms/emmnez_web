@@ -53,7 +53,7 @@ img {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 12px;
 }
 
 .section {
@@ -140,9 +140,10 @@ img {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 800;
     color: var(--primary-navy);
+    white-space: nowrap;
 }
 
 .logo span {
@@ -164,6 +165,8 @@ img {
     cursor: pointer;
     padding: 0;
     z-index: 1001;
+    margin-left: auto;
+    flex-shrink: 0;
 }
 
 .hamburger span {
@@ -645,6 +648,14 @@ textarea.form-control {
 
 /* Responsive Design - Desktop First overrides */
 @media (min-width: 768px) {
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
     .grid-3 {
         grid-template-columns: repeat(3, 1fr);
     }
