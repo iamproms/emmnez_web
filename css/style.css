@@ -202,19 +202,20 @@ img {
 /* Mobile Menu */
 .mobile-menu {
     position: fixed;
-    top: 0;
-    right: -100%;
-    width: 80%;
-    max-width: 400px;
-    height: 100vh;
+    top: 80px;
+    right: -105%;
+    width: 72%;
+    max-width: 320px;
+    height: auto;
     background-color: var(--secondary-white);
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: -5px 8px 24px rgba(0, 0, 0, 0.12);
+    border-radius: 0 0 0 16px;
     z-index: 999;
-    padding: 100px 40px 40px;
+    padding: 24px 32px 32px;
     transition: right var(--transition-smooth);
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 4px;
 }
 
 .mobile-menu.active {
@@ -222,10 +223,10 @@ img {
 }
 
 .mobile-menu a:not(.btn) {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: var(--primary-navy);
-    padding: 12px 0;
+    padding: 10px 0;
     position: relative;
     width: fit-content;
     transition: color 0.3s ease;
