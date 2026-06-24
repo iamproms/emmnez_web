@@ -5,9 +5,9 @@
     --text-gray: #4B5563;
     --accent-blue: #0077B6;
     --border-light: #E5E7EB;
-    
+
     --font-main: 'Inter', sans-serif;
-    
+
     --transition-fast: 0.2s ease;
     --transition-smooth: 0.3s ease-in-out;
 }
@@ -30,7 +30,12 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--primary-navy);
     font-weight: 700;
     line-height: 1.2;
@@ -85,7 +90,8 @@ img {
     transition: all var(--transition-fast);
     border: none;
     min-width: 44px;
-    min-height: 44px; /* Touch target size */
+    min-height: 44px;
+    /* Touch target size */
 }
 
 .btn-primary {
@@ -151,7 +157,8 @@ img {
 }
 
 .nav-links {
-    display: none; /* Mobile first */
+    display: none;
+    /* Mobile first */
 }
 
 .hamburger {
@@ -273,7 +280,8 @@ img {
 
 /* Main Content Wrapper */
 main {
-    margin-top: 80px; /* Offset for fixed header */
+    margin-top: 80px;
+    /* Offset for fixed header */
 }
 
 /* Hero Section */
@@ -605,6 +613,7 @@ textarea.form-control {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -659,24 +668,24 @@ textarea.form-control {
     .grid-3 {
         grid-template-columns: repeat(3, 1fr);
     }
-    
+
     .grid-4 {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .grid-2 {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }
-    
+
     .hero h1 {
         font-size: 3.5rem;
     }
-    
+
     .hero p {
         font-size: 1.25rem;
     }
-    
+
     .footer-top {
         grid-template-columns: 2fr 1fr 1fr;
     }
@@ -684,9 +693,10 @@ textarea.form-control {
     .service-detail {
         grid-template-columns: 1fr 1fr;
     }
-    
+
     .service-detail:nth-child(even) .service-img-col {
-        order: 1; /* Reset on desktop so image is on right */
+        order: 1;
+        /* Reset on desktop so image is on right */
     }
 }
 
@@ -694,26 +704,26 @@ textarea.form-control {
     .hamburger {
         display: none;
     }
-    
+
     .nav-links {
         display: flex;
         gap: 32px;
         align-items: center;
     }
-    
+
     .nav-links a {
         font-weight: 600;
         color: var(--primary-navy);
     }
-    
+
     .nav-links a.active {
         color: var(--accent-blue);
     }
-    
+
     .nav-links a:hover {
         color: var(--accent-blue);
     }
-    
+
     .grid-4 {
         grid-template-columns: repeat(4, 1fr);
     }
