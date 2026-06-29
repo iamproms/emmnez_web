@@ -554,7 +554,7 @@ textarea.form-control {
 .service-img {
     border-radius: 12px;
     width: 100%;
-    height: auto;
+    height: 400px;
     object-fit: cover;
 }
 
